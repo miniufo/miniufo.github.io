@@ -5,15 +5,17 @@
   
 
   
-  <title>MiniUFO&#39;s little space</title>
+  <title>Duoduo/Poem | MiniUFO&#39;s little space</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="flying around the world">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MiniUFO&#39;s little space">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="MiniUFO                                                                                   	  var count&#x3D;0;         	  var time&#x3D;0;         	           	  var lst&#x3D;[         	  &quot;《江">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Duoduo&#x2F;Poem">
+<meta property="og:url" content="http://yoursite.com/2020/03/26/Duoduo/Poem/index.html">
 <meta property="og:site_name" content="MiniUFO&#39;s little space">
-<meta property="og:description" content="flying around the world">
+<meta property="og:description" content="MiniUFO                                                                                   	  var count&#x3D;0;         	  var time&#x3D;0;         	           	  var lst&#x3D;[         	  &quot;《江">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-26T13:37:36.550Z">
+<meta property="article:modified_time" content="2020-03-19T14:26:00.552Z">
 <meta property="article:author" content="Yu-Kun Qian">
 <meta property="article:tag" content="Science and Technology">
 <meta name="twitter:card" content="summary">
@@ -69,287 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Duoduo/Vocabulary" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/26/Duoduo/Vocabulary/" class="article-date">
-  <time datetime="2020-03-26T13:37:36.552Z" itemprop="datePublished">2020-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/26/Duoduo/Vocabulary/">Duoduo/Vocabulary</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-        <title>MiniUFO</title>
-        <meta name='keywords' content='addition within 20'>
-        <meta name='description' content=''>
- 
-        <!-- js/css -->
-        <style type="text/css">
-        <!--
-        .display{font-size:110px; color:#000000; text-align:center;}
-        .button{font-size:50px; color:#000000; text-align:center;}
-        -->
-        </style>
-        
-        <script>
-        	  var count=0;
-        	  var time=0;
-        	  
-        	  var lst=[
-        	  		"father","mother","brother","sister","grandpa","grandma","uncle","auntie",
-        	  		"rainy day","sunny day","cloudy day","windy day","snowy day",
-        	  		"hello","nap","sleep","sweet dreams","good morning","good afternoon","good evening","good night",
-        	  		"spring", "red rose", "white lily","eye","nose","mouth","tooth","ear","face","head","neck","leg","foot","toe","body","shoulder","arm","hand","finger",
-        	  		"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday",
-        	  		"January","February","March","April","June","July","August","September","October","November","December",
-        	  		"black","red","yellow","orange","pink","purple","green","gray","blue","white","silver",
-        	  		"Aquarius","Pisces","Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn",
-        	  		"bees","birds","ladybugs","mosquitoes","grasshoppers",
-        	  		"country","Spain","New Zealand","Canada","Italy","Australia","England","China","France","Korea","Germany","Japan",
-        	  		"soldier","sailor","police officer","firefighter","mail carrier","astronaut","pencil","draw","butterfly","sea",
-        	  		"birthday","present","candle","blow","cake","cut",
-        	  		"tomato","pants","sun","frog","carrot","pig","mouse","chair","coat","spider","snowman",
-        	  		"kitchen","balcony","dining room","bathroom","living room","bedroom",
-        	  		"circle","triangle","square","rectangle","star","diamond","heart",
-        	  		"flower","river","bee","tree","swim","dive","fish","row","boat",
-        	  		"one","two","three","four","five","six","seven","eight","night","ten"];
-        	  
-        	  function start(){
-        	  		var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  		
-        	  		strBtn.style.display="none";
-        	  		nxtBtn.style.display="";
-        	  		
-        	  		time=new Date().getTime();
-        	  		
-        	  		nextOne();
-        	  }
-        	  
-        	  function nextOne(){
-        	  	  if(count==30) report();
-        	  	  else{
-        	  		    count++;
-        	  		    
-        	  		    var expression=generate(count);
-        	  		    var divObj=document.getElementById("disp");
-        	  		    
-        	  		    divObj.innerHTML=expression;
-        	  	  }
-        	  }
-        	  
-        	  function report(){
-        	  		var usedT=Math.round((new Date().getTime()-time)/1000.0);
-        	  		var averg=Math.round(usedT/count);
-        	  		
-        	  		var divObj=document.getElementById("lastResult");
-        	  		
-        	  		divObj.innerHTML=count.toString()+"题共用"+usedT.toString()+"秒<br>平均每题用"+averg.toString()+"秒";
-        	  		divObj.style.fontSize="90px"
-        	  		
-        	  		restart()
-        	  }
-        	  
-        	  function restart(){
-        	  	  count=0;
-        	  	  
-        	  	  var divObj=document.getElementById("disp");
-        	  	  var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  	  
-        	  	  divObj.innerHTML="<b>英语打卡练习</b>";
-        	  		strBtn.style.display="";
-        	  		nxtBtn.style.display="none";
-        	  }
-        	  
-        	  function generate(num){
-        	  		return lst[Math.round(Math.random()*(lst.length-1))];
-        	  }
-        </script>
- 
-    <meta name="generator" content="Hexo 4.2.0"></head>
-<body style="background:#CCCCCC">
-
-<div id="disp" class="display"><b>英语打卡练习</b></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div><br></div>
-<div class="button"><button type="button" onclick="start()" id="strBtn" class="button">开始</button></div>
-<div class="button"><button type="button" onclick="nextOne()" style="display:none" id="nxtBtn" class="button">下一题</button></div>
-<div><br></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div class="button" id="lastResult" style="font-size:25px;text-align:center;"></div>
-
-</body>
-</html>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/26/Duoduo/Vocabulary/" data-id="ck88sykuf00022sef9fo562ck" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Duoduo/Sentence" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/26/Duoduo/Sentence/" class="article-date">
-  <time datetime="2020-03-26T13:37:36.551Z" itemprop="datePublished">2020-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/26/Duoduo/Sentence/">Duoduo/Sentence</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-        <title>MiniUFO</title>
-        <meta name='keywords' content='addition within 20'>
-        <meta name='description' content=''>
- 
-        <!-- js/css -->
-        <style type="text/css">
-        <!--
-        .display{font-size:80px; color:#000000; text-align:center;}
-        .button{font-size:50px; color:#000000; text-align:center;}
-        -->
-        </style>
-        
-        <script>
-        	  var count=0;
-        	  var time=0;
-        	  
-        	  var lst=[
-        	  		"Happy birthday to Indy", "Blow the candle", "Cut the cake", "Here is a present for you",
-        	  		"How's the weather today?","Today is a cloudy day","What's the weather today?",
-        	  		"How many Indians are there?","There are 5 Indians",
-        	  		"I love my auntie", "Do you love your monther?",
-        	  		"This is the alphabet", "Come and say them with me",
-        	  		"I can see a firefly in spring time","What can you see in spring time?",
-        	  		"He is a soldier", "He is a mail carrier", "Is he a firefighter?", "Is he an astronaut?", "Is he a police officer?", "Yes he is. He is a sailor",
-        	  		"It is a living room", "It is a kitchen", "What is it?", "What shape is it?", "It is a diamond", "It is a rectangle",
-        	  		"I like to draw a soldier", "What do you like to draw?", "I like to draw a butterfly",
-        	  		"I can see a river in the country", "What can you see in the country?", "I can see a bee in the country","I can swim in the sea","What can you do in the sea?", "I can dive in the sea",
-        	  		"How old are you?", "I'm six", "How are you?", "I'm fine. Thank you"];
-        	  
-        	  function start(){
-        	  		var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  		
-        	  		strBtn.style.display="none";
-        	  		nxtBtn.style.display="";
-        	  		
-        	  		time=new Date().getTime();
-        	  		
-        	  		nextOne();
-        	  }
-        	  
-        	  function nextOne(){
-        	  	  if(count==30) report();
-        	  	  else{
-        	  		    count++;
-        	  		    
-        	  		    var expression=generate(count);
-        	  		    var divObj=document.getElementById("disp");
-        	  		    
-        	  		    divObj.innerHTML=expression;
-        	  	  }
-        	  }
-        	  
-        	  function report(){
-        	  		var usedT=Math.round((new Date().getTime()-time)/1000.0);
-        	  		var averg=Math.round(usedT/count);
-        	  		
-        	  		var divObj=document.getElementById("lastResult");
-        	  		
-        	  		divObj.innerHTML=count.toString()+"题共用"+usedT.toString()+"秒<br>平均每题用"+averg.toString()+"秒";
-        	  		divObj.style.fontSize="90px"
-        	  		
-        	  		restart()
-        	  }
-        	  
-        	  function restart(){
-        	  	  count=0;
-        	  	  
-        	  	  var divObj=document.getElementById("disp");
-        	  	  var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  	  
-        	  	  divObj.innerHTML="<b>英语打卡练习</b>";
-        	  		strBtn.style.display="";
-        	  		nxtBtn.style.display="none";
-        	  }
-        	  
-        	  function generate(num){
-        	  		return lst[Math.round(Math.random()*(lst.length-1))];
-        	  }
-        </script>
- 
-    <meta name="generator" content="Hexo 4.2.0"></head>
-<body style="background:#CCCCCC">
-
-<div id="disp" class="display"><b>英语打卡练习</b></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div><br></div>
-<div class="button"><button type="button" onclick="start()" id="strBtn" class="button">开始</button></div>
-<div class="button"><button type="button" onclick="nextOne()" style="display:none" id="nxtBtn" class="button">下一题</button></div>
-<div><br></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div class="button" id="lastResult" style="font-size:25px;text-align:center;"></div>
-
-</body>
-</html>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/26/Duoduo/Sentence/" data-id="ck88sykuh00042seffk9c3cqn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Duoduo/Poem" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Duoduo/Poem" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/26/Duoduo/Poem/" class="article-date">
   <time datetime="2020-03-26T13:37:36.550Z" itemprop="datePublished">2020-03-26</time>
@@ -362,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/26/Duoduo/Poem/">Duoduo/Poem</a>
+    <h1 class="article-title" itemprop="name">
+      Duoduo/Poem
     </h1>
   
 
@@ -1086,219 +808,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Duoduo/Math" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/26/Duoduo/Math/" class="article-date">
-  <time datetime="2020-03-26T13:37:36.548Z" itemprop="datePublished">2020-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2020/03/26/Duoduo/Sentence/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/26/Duoduo/Math/">Duoduo/Math</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-        <title>MiniUFO</title>
-        <meta name='keywords' content='addition within 20'>
-        <meta name='description' content=''>
- 
-        <!-- js/css -->
-        <style type="text/css">
-        <!--
-        .display{font-size:110px; color:#000000; text-align:center;}
-        .button{font-size:50px; color:#000000; text-align:center;}
-        -->
-        </style>
+          Duoduo/Sentence
         
-        <script>
-        	  var count=0;
-        	  var time=0;
-        	  
-        	  function start(){
-        	  		var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  		
-        	  		strBtn.style.display="none";
-        	  		nxtBtn.style.display="";
-        	  		
-        	  		time=new Date().getTime();
-        	  		
-        	  		nextOne();
-        	  }
-        	  
-        	  function nextOne(){
-        	  	  if(count==30) report();
-        	  	  else{
-        	  		    count++;
-        	  		    
-        	  		    var expression=generate(count);
-        	  		    var divObj=document.getElementById("disp");
-        	  		    
-        	  		    divObj.innerHTML=expression;
-        	  	  }
-        	  }
-        	  
-        	  function report(){
-        	  		var usedT=Math.round((new Date().getTime()-time)/1000.0);
-        	  		var averg=Math.round(usedT/count);
-        	  		
-        	  		var divObj=document.getElementById("lastResult");
-        	  		
-        	  		divObj.innerHTML=count.toString()+"题共用"+usedT.toString()+"秒<br>平均每题用"+averg.toString()+"秒";
-        	  		divObj.style.fontSize="90px"
-        	  		
-        	  		restart()
-        	  }
-        	  
-        	  function restart(){
-        	  	  count=0;
-        	  	  
-        	  	  var divObj=document.getElementById("disp");
-        	  	  var strBtn=document.getElementById("strBtn");
-        	  		var nxtBtn=document.getElementById("nxtBtn");
-        	  	  
-        	  	  divObj.innerHTML="<b>算术打卡练习</b>";
-        	  		strBtn.style.display="";
-        	  		nxtBtn.style.display="none";
-        	  }
-        	  
-        	  function generate(num){
-        	  	  var a=Math.round(Math.random()*99);
-        	  	  var b=Math.round(Math.random()*99);
-        	  	  
-        	  	  while(a+b>100||a<10||b<10){ // (a>=20||b>12||a<b||a==b)
-        	  	  	  a=Math.round(Math.random()*99);
-        	  	  	  b=Math.round(Math.random()*99)
-        	  	  }
-        	  	  
-        	  	  return a.toString()+"+"+b.toString()+"=?"
-        	  }
-        </script>
- 
-    <meta name="generator" content="Hexo 4.2.0"></head>
-<body style="background:#CCCCCC">
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/26/Duoduo/Math/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Duoduo/Math</div>
+    </a>
+  
+</nav>
 
-<div id="disp" class="display"><b>算术打卡练习</b></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div><br></div>
-<div class="button"><button type="button" onclick="start()" id="strBtn" class="button">开始</button></div>
-<div class="button"><button type="button" onclick="nextOne()" style="display:none" id="nxtBtn" class="button">下一题</button></div>
-<div><br></div>
-<div style="font-size:30px;text-align:center;">------------------------------------</div>
-<div class="button" id="lastResult" style="font-size:25px;text-align:center;"></div>
-
-</body>
-</html>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/26/Duoduo/Math/" data-id="ck88sykue00012sef65a0cfoj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="default-index" class="article article-type-default" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/26/index/" class="article-date">
-  <time datetime="2020-03-26T13:37:19.658Z" itemprop="datePublished">2020-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/26/index/">index</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Question-Laplacian-diffusion-of-momentum-or-PV"><a href="#Question-Laplacian-diffusion-of-momentum-or-PV" class="headerlink" title="Question: Laplacian diffusion of momentum or PV"></a>Question: Laplacian diffusion of momentum or PV</h2><p><strong>11 May 2019 by MiniUFO</strong></p>
-<hr>
-<p>[TOC]</p>
-<hr>
-<ol>
-<li><p><a href="Duoduo/Math.html">Math</a>.</p>
-</li>
-<li><p><a href="Duoduo/Vocabulary.html">Vocabulary</a>.</p>
-</li>
-<li><p><a href="Duoduo/Sentence.html">Sentence</a>.</p>
-</li>
-<li><p><a href="Duoduo/Poem.html">Poem</a>.</p>
-</li>
-</ol>
-<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Many variables can be used to describe the state of a fluid (e.g., atmosphere and ocean), such as momentum vector $\mathbf u$, potential temperature $\theta$, thickness $h$, potential vorticity (PV) $q$ etc. All these variables seem to be applicable to the Laplacian diffusion operator as $\nabla^2 \mathbf u$, $\nabla^2 \theta$, $\nabla^2 h$ and $\nabla^2 q$. However, some of them are not consistent with each other or some physics.</p>
-<hr>
-<h3 id="1-Examples"><a href="#1-Examples" class="headerlink" title="1. Examples"></a>1. Examples</h3><h5 id="1-1-non-diffusive-planetary-vorticity-f"><a href="#1-1-non-diffusive-planetary-vorticity-f" class="headerlink" title="1.1 non-diffusive planetary vorticity $f$"></a>1.1 non-diffusive planetary vorticity $f$</h5><p>Absolute $\zeta_a$ is the sum of relative vorticity $\zeta$ and planetary vorticity $f$:</p>
-<blockquote>
-<p>$$\zeta_a=\zeta+f$$</p>
-</blockquote>
-<p>While $\zeta$ can be diffusive, $f$ is generally not diffusive (<a href="https://journals.ametsoc.org/doi/10.1175/2010JAS3432.1" target="_blank" rel="noopener"><strong>Nakamura and Zhu 2010</strong></a>). As a result, $\zeta_a$ is not diffused as $\nabla^2 \zeta_a$, but rather:</p>
-<blockquote>
-<p>$$\nabla^2 (\zeta_a- f)=\nabla^2 \zeta$$</p>
-</blockquote>
-<p>to ensure global conservation of zonal momentum.</p>
-<h5 id="1-2-vorticity-thickness-diffusion-v-s-PV-diffusion"><a href="#1-2-vorticity-thickness-diffusion-v-s-PV-diffusion" class="headerlink" title="1.2 vorticity/thickness diffusion v.s. PV diffusion"></a>1.2 vorticity/thickness diffusion v.s. PV diffusion</h5><p>The barotropic vorticity model is:</p>
-<blockquote>
-<p>$$<br>\begin{align}<br>\frac{\partial \zeta_a}{\partial t}+\nabla\cdot (\mathbf u \zeta_a)&amp;=\kappa_m \nabla^2\zeta_a \tag{1}\<br>\frac{\partial h}{\partial t}+\nabla\cdot (\mathbf u h)&amp;=0 \tag{2}\<br>\frac{\partial \sigma}{\partial t}+\nabla\cdot (\mathbf u \sigma)&amp;=0 \tag{2’}<br>\end{align}<br>$$</p>
-</blockquote>
-<p>where density $\sigma$ is the inverse of thickness $h$. Why Eq. (2) or Eq. (2’) does not have a Laplacian diffusion term $\kappa_h\nabla^2 h$ can be found at <a href="https://physics.stackexchange.com/questions/194733/no-diffusion-term-in-conservation-of-mass-in-navier-stokes-equations" target="_blank" rel="noopener"><strong>stackexchange</strong></a>. Given that barotropic PV is defined as $q=\zeta_a/h=\sigma\zeta$, we can have the advection-diffusion equation for PV as:</p>
-<blockquote>
-<p>$$\frac{\partial q}{\partial t}=-\mathbf u\cdot \nabla q+\kappa_m \nabla^2q \tag{3}$$</p>
-</blockquote>
-<p>It is not possible to verify that Eqs. (1-3) are exactly equivalent to Eq. (4). Considering the diffusion term only, we have:</p>
-<blockquote>
-<p>$$<br>\frac{\partial q}{\partial t}\sim \nabla^2q<br>= \nabla^2 (\sigma\zeta_a)<br>=\sigma\nabla^2 \zeta_a+2\nabla\zeta_a\cdot\nabla \sigma+\zeta_a\nabla^2 \sigma<br>$$</p>
-</blockquote>
-<hr>
-<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ol>
-<li>Nakamura, N., and D. Zhu, 2010: Finite-amplitude wave activity and diffusive flux of potential vorticity in eddy-mean flow interaction. <em>J. Atmos. Sci.</em>, <strong>67</strong>, 2701-2716.</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/26/index/" data-id="ck88syku500002seffa2k3d8v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
